@@ -4,10 +4,12 @@ Created on 11 de ago de 2017
 @author: CGCavalcante
 '''
 class Noh():
-    def __init__(self,id=None):
-        self.node = id
+    def __init__(self,gufs=None):
+        
+        self.node = gufs
         self.pai = None
-        self.filhos = []
+        self.fidireito = None
+        self.fiesquerdo = None
         
     def setnode(self,id):
         self.node = id
@@ -21,9 +23,14 @@ class Noh():
     def getpai(self):
         return self.pai
     
-    def setFilhos(self,id):
-        self.filhos.append(id)
+    def setFidireito(self,gufs):
+        self.fidireito= gufs
         
-    def getFilhos(self,id,operador):
-        return self.filhos
+    def getFidireito(self):
+        return self.fidireito
 
+    def setFiesquerdo(self,gufs):
+        self.fiesquerdo= gufs
+        
+    def getFiesquerdo(self):
+        return self.fiesquerdo
