@@ -4,21 +4,20 @@ Created on 11 de ago de 2017
 @author: CGCavalcante
 '''
 class Noh():
-    def __init__(self,gufs=None):
-        
+    def __init__(self,gufs):
         self.node = gufs
         self.pai = None
         self.fidireito = None
         self.fiesquerdo = None
         
-    def setnode(self,id):
-        self.node = id
+    def setnode(self,gufs):
+        self.node = gufs
         
     def getnode(self):
         return self.node
     
-    def setpai(self,id):
-        self.pai = id
+    def setpai(self,gufs):
+        self.pai = gufs
         
     def getpai(self):
         return self.pai
